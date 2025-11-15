@@ -139,28 +139,28 @@ function createPlayerCard(playerNumber) {
                         <img src="./icons/apple.svg" alt="apple">
                         <label>Apples</label>
                     </span>
-                    <input type="number" name="num_apples" min="0" class="apple">
+                    <input type="number" name="apple" min="0" class="apple">
                 </div>
                 <div class="legal_good">
                     <span class="item">
                         <img src="./icons/cheese.svg" alt="cheese">
                         <label>Cheese</label>
                     </span>    
-                        <input type="number" name="num_cheese" min="0" class="cheese">
+                        <input type="number" name="cheese" min="0" class="cheese">
                 </div>
                 <div class="legal_good">
                     <span class="item">
                         <img src="./icons/bread.svg" alt="bread">
                         <label>Bread</label>
                     </span>    
-                        <input type="number" name="num_bread" min="0" class="bread">
+                        <input type="number" name="bread" min="0" class="bread">
                 </div>
                 <div class="legal_good">
                     <span class="item">
                         <img src="./icons/chicken.svg" alt="chicken">
                         <label>Chicken</label>
                     </span>    
-                        <input type="number" name="num_chicken" min="0" class="chicken">
+                        <input type="number" name="chicken" min="0" class="chicken">
                 </div>
             </div>
             <div class="goods_type" id="contraband_goods_${playerNumber}">
@@ -169,28 +169,28 @@ function createPlayerCard(playerNumber) {
                         <img src="./icons/pepper.svg" alt="pepper">
                         <label>Peppers</label>
                     </span>    
-                        <input type="number" name="num_Peppers" min="0" class="contraband">
+                        <input type="number" name="pepper" min="0" class="contraband">
                 </div>
                 <div class="contraband_good">
                     <span class="item">
                         <img src="./icons/mead.svg" alt="mead">
                         <label>Meads</label>
                     </span>    
-                        <input type="number" name="num_Meads" min="0" class="contraband">
+                        <input type="number" name="mead" min="0" class="contraband">
                 </div>
                 <div class="contraband_good">
                     <span class="item">
                         <img src="./icons/silk.svg" alt="silk">
                         <label>Silks</label>
                     </span>    
-                        <input type="number" name="num_Silks" min="0" class="contraband">
+                        <input type="number" name="silk" min="0" class="contraband">
                 </div>
                 <div class="contraband_good">
                     <span class="item">
                         <img src="./icons/crossbow.svg" alt="crossbow">
                         <label>Crossbows</label>
                     </span>    
-                        <input type="number" name="num_Crossbows" min="0" class="contraband">
+                        <input type="number" name="crossbow" min="0" class="contraband">
                 </div>
             </div>
             <div class="goods_type" id="royal_goods_${playerNumber}">
@@ -199,49 +199,49 @@ function createPlayerCard(playerNumber) {
                         <img src="./icons/green_apple.svg" alt="green apple">
                         <label>Green apples</label>
                     </span>    
-                        <input type="number" name="num_Green_apples" min="0" class="apple">
+                        <input type="number" name="green_apple" min="0" class="apple">
                 </div>
                 <div class="royal_good">
                     <span class="item">
                         <img src="./icons/golden_apple.svg" alt="golden apple">
                         <label>Golden apples</label>
                     </span>    
-                        <input type="number" name="num_Golden_apples" min="0" class="apple">
+                        <input type="number" name="golden_apple" min="0" class="apple">
                 </div>
                 <div class="royal_good">
                     <span class="item">
                         <img src="./icons/gouda_cheese.svg" alt="gouda cheese">
                         <label>Gouda cheeses</label>
                     </span>    
-                        <input type="number" name="num_Gouda_cheeses" min="0" class="cheese">
+                        <input type="number" name="gouda_cheese" min="0" class="cheese">
                 </div>
                 <div class="royal_good">
                     <span class="item">
                         <img src="./icons/blue_cheese.svg" alt="blue cheese">
                         <label>Blue cheeses</label>
                     </span>    
-                        <input type="number" name="num_Blue_cheeses" min="0" class="cheese">
+                        <input type="number" name="blue_cheese" min="0" class="cheese">
                 </div>
                 <div class="royal_good">
                     <span class="item">
                         <img src="./icons/rye_bread.svg" alt="rye bread">
                         <label>Rye breads</label>
                     </span>    
-                        <input type="number" name="num_Rye_breads" min="0" class="bread">
+                        <input type="number" name="rye_bread" min="0" class="bread">
                 </div>
                 <div class="royal_good">
                     <span class="item">
                         <img src="./icons/pumpernickel_bread.svg" alt="pumpernickel bread">
                         <label>Pumpernickel breads</label>
                     </span>    
-                        <input type="number" name="num_Pumpernickel_breads" min="0" class="bread">
+                        <input type="number" name="pumpernickel_bread" min="0" class="bread">
                 </div>
                 <div class="royal_good">
                     <span class="item">
                         <img src="./icons/royal_rooster.svg" alt="royal rooster">
                         <label>Royal Roosters</label>
                     </span>    
-                        <input type="number" name="num_Royal_Roosters" min="0" class="chicken">
+                        <input type="number" name="royal_rooster" min="0" class="chicken">
                 </div>
             </div>
             <div class="goods_type" id="coins_${playerNumber}">
@@ -250,28 +250,28 @@ function createPlayerCard(playerNumber) {
                         <img src="./icons/black_coin.svg" alt="one gold coin">
                         <label>1 gold coin</label>
                     </span>    
-                        <input type="number" name="one_gold" min="0" class="">
+                        <input type="number" name="one_gold" min="0" class="coin">
                 </div>
                 <div class="coin">
                     <span class="item">
                         <img src="./icons/copper_coin.svg" alt="5 gold coin">
                         <label>5 gold coin</label>
                     </span>    
-                        <input type="number" name="five_gold" min="0" class="">
+                        <input type="number" name="five_gold" min="0" class="coin">
                 </div>
                 <div class="coin">
                     <span class="item">
                         <img src="./icons/silver_coin.svg" alt="20 gold coin">
                         <label>20 gold coin</label>
                     </span>    
-                        <input type="number" name="twenty_gold" min="0" class="">
+                        <input type="number" name="twenty_gold" min="0" class="coin">
                 </div>
                 <div class="coin">
                     <span class="item">
                         <img src="./icons/gold_coin.svg" alt="50 gold coin">
                         <label>50 gold coin</label>
                     </span>    
-                        <input type="number" name="fifty_gold" min="0" class="">
+                        <input type="number" name="fifty_gold" min="0" class="coin">
                 </div>
             </div>
             <div>
@@ -300,64 +300,61 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event delegation for all inputs
     playersContainer.addEventListener('input', function(event) {
         if (event.target.type === 'number') {
-            // Get the player number from the closest player div
-            const playerDiv = event.target.closest('.player');
-            const playerNumber = playerDiv.id.replace('player', '');
-            calculateTotal(playerNumber);
+            calculateTotal();
         }
     });
 });
 
 // Calculate totals
-function calculateTotal(playerNumber) {
-    const player = document.getElementById(`player${playerNumber}`);
-    const player_cards = player.querySelectorAll('input[type="number"]');
+function calculateTotal() {
+    for (let playerNumber = 1; playerNumber <= 5; playerNumber++) {
+        const player = document.getElementById(`player${playerNumber}`);
+        const player_cards = player.querySelectorAll('input[type="number"]');
 
-    const num_apple = parseInt(player_cards[0].value) || 0;
-    const num_cheese = parseInt(player_cards[1].value) || 0;
-    const num_bread = parseInt(player_cards[2].value) || 0;
-    const num_chicken = parseInt(player_cards[3].value) || 0;
-    const num_peppers = parseInt(player_cards[4].value) || 0;
-    const num_meads = parseInt(player_cards[5].value) || 0;
-    const num_silks = parseInt(player_cards[6].value) || 0;
-    const num_crossbows = parseInt(player_cards[7].value) || 0;
-    const num_green_apples = parseInt(player_cards[8].value) || 0;
-    const num_golden_apples = parseInt(player_cards[9].value) || 0;
-    const num_gouda_cheeses = parseInt(player_cards[10].value) || 0;
-    const num_blue_cheeses = parseInt(player_cards[11].value) || 0;
-    const num_rye_breads = parseInt(player_cards[12].value) || 0;
-    const num_pumpernickel_breads = parseInt(player_cards[13].value) || 0;
-    const num_royal_roosters = parseInt(player_cards[14].value) || 0;
-    const num_one_gold = parseInt(player_cards[15].value) || 0;
-    const num_five_gold = parseInt(player_cards[16].value) || 0;
-    const num_twenty_gold = parseInt(player_cards[17].value) || 0;
-    const num_fifty_gold = parseInt(player_cards[18].value) || 0;
+        const num_apple = parseInt(player_cards[0].value) || 0;
+        const num_cheese = parseInt(player_cards[1].value) || 0;
+        const num_bread = parseInt(player_cards[2].value) || 0;
+        const num_chicken = parseInt(player_cards[3].value) || 0;
+        const num_peppers = parseInt(player_cards[4].value) || 0;
+        const num_meads = parseInt(player_cards[5].value) || 0;
+        const num_silks = parseInt(player_cards[6].value) || 0;
+        const num_crossbows = parseInt(player_cards[7].value) || 0;
+        const num_green_apples = parseInt(player_cards[8].value) || 0;
+        const num_golden_apples = parseInt(player_cards[9].value) || 0;
+        const num_gouda_cheeses = parseInt(player_cards[10].value) || 0;
+        const num_blue_cheeses = parseInt(player_cards[11].value) || 0;
+        const num_rye_breads = parseInt(player_cards[12].value) || 0;
+        const num_pumpernickel_breads = parseInt(player_cards[13].value) || 0;
+        const num_royal_roosters = parseInt(player_cards[14].value) || 0;
+        const num_one_gold = parseInt(player_cards[15].value) || 0;
+        const num_five_gold = parseInt(player_cards[16].value) || 0;
+        const num_twenty_gold = parseInt(player_cards[17].value) || 0;
+        const num_fifty_gold = parseInt(player_cards[18].value) || 0;
 
 
-    const total =
-    (num_apple * cards.apple.gold_value) + 
-    (num_cheese * cards.cheese.gold_value) + 
-    (num_bread * cards.bread.gold_value) + 
-    (num_chicken * cards.chicken.gold_value) + 
-    (num_peppers * cards.pepper.gold_value) + 
-    (num_meads * cards.mead.gold_value) + 
-    (num_silks * cards.silk.gold_value) + 
-    (num_crossbows * cards.crossbow.gold_value) +
-    (num_green_apples * cards.green_apple.gold_value) +
-    (num_golden_apples * cards.golden_apple.gold_value) +
-    (num_gouda_cheeses * cards.gouda_cheese.gold_value) +
-    (num_blue_cheeses * cards.blue_cheese.gold_value) +
-    (num_rye_breads * cards.rye_bread.gold_value) +
-    (num_pumpernickel_breads * cards.pumpernickel_bread.gold_value) +
-    (num_royal_roosters * cards.royal_rooster.gold_value) +
-    (num_one_gold * 1) +
-    (num_five_gold * 5) +
-    (num_twenty_gold * 20) +
-    (num_fifty_gold * 50);
+        const total =
+            (num_apple * cards.apple.gold_value) + 
+            (num_cheese * cards.cheese.gold_value) + 
+            (num_bread * cards.bread.gold_value) + 
+            (num_chicken * cards.chicken.gold_value) + 
+            (num_peppers * cards.pepper.gold_value) + 
+            (num_meads * cards.mead.gold_value) + 
+            (num_silks * cards.silk.gold_value) + 
+            (num_crossbows * cards.crossbow.gold_value) +
+            (num_green_apples * cards.green_apple.gold_value) +
+            (num_golden_apples * cards.golden_apple.gold_value) +
+            (num_gouda_cheeses * cards.gouda_cheese.gold_value) +
+            (num_blue_cheeses * cards.blue_cheese.gold_value) +
+            (num_rye_breads * cards.rye_bread.gold_value) +
+            (num_pumpernickel_breads * cards.pumpernickel_bread.gold_value) +
+            (num_royal_roosters * cards.royal_rooster.gold_value) +
+            (num_one_gold * 1) +
+            (num_five_gold * 5) +
+            (num_twenty_gold * 20) +
+            (num_fifty_gold * 50);
 
-    document.getElementById(`score_${playerNumber}`).textContent = total;
-    return total;
-
+        document.getElementById(`score_${playerNumber}`).textContent = total;
+    }
 };
 
 // Reset input boxes
@@ -378,28 +375,54 @@ function calculateBonus() {
     }
 
     // Get amounts for each type of good for each player
-    const amount_apples = []
+    const amount_apple = []
     const amount_cheese = []
     const amount_bread = []
     const amount_chicken = []
 
-    for (let i = 1; i <= 5; i++) {
-        const player = document.getElementById(`player${playerNumber}`);
-        const player_cards = player.querySelectorAll('input[type="number", "goods_type=]');
-    }
+    const amounts = {
+        'apple': amount_apple,
+        'cheese': amount_cheese,
+        'bread': amount_bread,
+        'chicken': amount_chicken
+        }
 
-    // For each type of good
-    
-
-    for (const i of goods_type) {
-        console.log(i)
-            for (let i = 1; i <= 5; i++) {
-            
-            // Sum amount of each player (must be >0)
+    // Loop every good type
+    for (const good of goods_type) {
+        // Loop every player
+        for (let playerNumber = 1; playerNumber <= 5; playerNumber++) {
+            const player = document.getElementById(`player${playerNumber}`);
+            const player_cards = player.querySelectorAll(`input[type="number"].${good}`);
+            let good_total = 0
+            for (const player_card of player_cards) {
+                const value = player_card.value || 0;
+                const name = player_card.name;
+                // console.log(value, name, cards[name].goods_amount)
+                good_total += value * cards[name].goods_amount;
+            }
+            amounts[good].push(good_total)
         }
     }
-    
-    
 
-    return 0
+    // Define kings and queens for each good
+
+    for (const good of goods_type) {
+        console.log(good);
+        max = Math.max(...amounts[good]);
+        console.log(max)
+        const count_max = amounts[good].filter(num => num === max).length;
+        if (count_max === 1) {
+            // No tie for 1st
+
+            // Needs to check if there's a queen
+        }
+    }
+    return 0;
+}
+
+function randomize() {
+    const inputs = document.querySelectorAll('input[type="number"]');
+    for (const i of inputs) {
+        i.value = Math.floor(Math.random()*3)
+    }
 }
