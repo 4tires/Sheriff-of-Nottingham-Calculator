@@ -205,3 +205,8 @@ img {
     width: 24px;
     margin-right: 8px;
 }
+
+img.king, img.queen {
+    margin-right: 4px;
+    margin-left: auto;
+}

@@ -338,6 +338,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Calculate totals
 function calculateTotal() {
     calculateBaskets()
+    remove_bonus_img() // Because every time calculateBonus is executed, it adds the king and queen images
     const bonus = calculateBonus()
     for (let playerNumber = 1; playerNumber <= 5; playerNumber++) {
         const player = document.getElementById(`player${playerNumber}`);
@@ -399,19 +400,6 @@ function reset () {
 
 // Calculate amounts for each basket
 function calculateBaskets() {
-    // Get amounts for each type of good for each player
-    // const amount_apple = []
-    // const amount_cheese = []
-    // const amount_bread = []
-    // const amount_chicken = []
-
-    // const amounts = {
-    //     'apple': amount_apple,
-    //     'cheese': amount_cheese,
-    //     'bread': amount_bread,
-    //     'chicken': amount_chicken
-    //     }
-
     // Loop every good type
     for (const good of goods_type) {
         // Loop every player
@@ -431,11 +419,8 @@ function calculateBaskets() {
     }
 }
 
-// Calculate King and Queen basketes
+// Calculate king and queen basketes
 function calculateBonus() {
-
-
-
     const king_queen_bonus = {
         'apple': [20, 10],
         'cheese': [15, 10],
@@ -450,7 +435,6 @@ function calculateBonus() {
     for (const good of goods_type) {
         const basket_elements = document.querySelectorAll(`input[name="${good}_basket"]`);
         const amounts = Array.from(basket_elements).map(el => parseInt(el.value) || 0);
-        console.log(amounts);
         const max = Math.max(...amounts);
 
         // Skip if no one has this good
@@ -462,17 +446,14 @@ function calculateBonus() {
         amounts.forEach((amount, index) => {
             if (amount === max) {
                 king_indices.push(index);
-                // playerNumber = index + 1;
-                // const player = document.getElementById(`player${playerNumber}`);
-                // const ref_node = player.querySelector(`input[name="${good}_basket"]`);
-
+                add_bonus_img("king", index, good)
             }
         });
 
         // Only one king
         if (king_indices.length === 1) {
             player_bonus[king_indices[0]] += king_queen_bonus[good][0];
-            // Find Queen
+            // Find queen
             const queen_indices = [];
 
             // Replace king value with 0 so it's not picked again as max value
@@ -482,7 +463,10 @@ function calculateBonus() {
             if (second_max === 0) continue;
 
             amounts.forEach((amount, index) => {
-                if (amount === second_max) queen_indices.push(index);
+                if (amount === second_max) {
+                    queen_indices.push(index);
+                    add_bonus_img("queen", index, good);
+                }
             })
 
             // Only one queen
@@ -502,6 +486,35 @@ function calculateBonus() {
         }
     }
     return player_bonus;
+}
+
+function add_bonus_img(role, index, good) {
+    playerNumber = index + 1;
+    const player = document.getElementById(`player${playerNumber}`);
+    const ref_node = player.querySelector(`input[name="${good}_basket"]`);
+
+    if (role === "king") {
+        image = "./icons/king.svg";
+    }
+    else if (role === "queen") {
+        image = "./icons/queen.svg";
+    }
+    else {
+        console.log("Role not valid");
+        return
+    }
+
+    const new_element = document.createElement('img');
+    new_element.src = image;
+    new_element.alt = role;
+    new_element.className = role;
+
+    ref_node.parentNode.insertBefore(new_element, ref_node);
+}
+
+function remove_bonus_img() {
+    const images = document.querySelectorAll(`img[class="king"], img[class="queen"]`);
+    images.forEach(el => el.remove());
 }
 
 function randomize() {
