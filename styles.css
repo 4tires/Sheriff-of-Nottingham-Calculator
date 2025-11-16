@@ -109,7 +109,12 @@ button:active {
     border: 2px solid #ffc107;
 }
 
-.legal_good, .contraband_good, .royal_good, .coin, .item {
+#basket_1, #basket_2, #basket_3, #basket_4, #basket_5 {
+    background-color: #C0C0C0;
+    border: 2px solid #D3D3D3;
+}
+
+.legal_good, .contraband_good, .royal_good, .coin, .item, .basket {
     display: flex;
     justify-content: space-between;
     align-items: center;
